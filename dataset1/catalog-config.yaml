@@ -1,11 +1,13 @@
-apiVersion: backstage.io/v1beta1
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: dataset-component
-  description: A sample dataset component for demonstration
-  annotations:
-github.com/dataset-url: 'https://github.com/akg1239/dataset1/blob/main/dataset1/shopping_trends.csv'
-github.com/column-names: '["column1", "column2", "column3", "column4"]'  # Add column names as a JSON string
+  name: dataset1
+  owner: CNCF
+  description: A simple api which says hello world
+  tags:
+    - flask
+    - hello-world
 spec:
-  owner: team-a
-  type: dataset
+  type: rest
+  lifecycle: experimental
+  owner: CNCF
