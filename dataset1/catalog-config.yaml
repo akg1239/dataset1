@@ -4,6 +4,9 @@ metadata:
   name: dataset1
   owner: CNCF
   description: A simple api which says hello world
+  annotations:
+    github.com/dataset-url: 'https://github.com/your-org/repository/raw/main/dataset.csv'
+    github.com/column-names: '["column1", "column2", "column3", "column4"]' 
   tags:
     - flask
     - hello-world
